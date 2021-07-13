@@ -1,0 +1,7 @@
+.places {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    color: orange;
+    font-size: 2em;
+}

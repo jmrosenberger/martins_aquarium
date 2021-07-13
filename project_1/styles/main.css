@@ -1,3 +1,6 @@
+@import url("quotes.css");
+@import url("places.css");
+
 body {
     background-image: url("https://www2.pictorem.com/collection/900_1976005HighRes.jpg");
     background-size: cover;
@@ -35,8 +38,11 @@ h1 {
     flex-direction: column;
     align-content: space-around;
     align-items: center;
+}
 
-
+.inventory h2 {
+    color: rgb(187, 135, 3);
+    text-decoration: underline;
 }
 
 .card {
