@@ -1,19 +1,15 @@
-import { getFish } from "./database.js"
+import { FishList } from "./FishList.js"
 
 
-const allFish = getFish()
 
-for (const fish of allFish) {
-    return `<ul>
-    console.log(fish)
-    </ul>`
-}
 
-const container = document.querySelector("#container")
 
+const parentHTMLElement = document.querySelector("#container")
 
 export const renderAllHTML = () => {
-    container.innerHTML = DailyJournal()
+    parentHTMLElement.innerHTML = FishList()
+
 }
+
 renderAllHTML()
 
