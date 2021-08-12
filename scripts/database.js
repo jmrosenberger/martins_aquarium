@@ -53,3 +53,38 @@ const database = {
 export const getFish = () => {
     return database.fish.map((fish) => ({...fish}))
 }
+
+
+export const  mostHolyFish = () => {
+    const holyFish = []
+
+    for (fish of fish) {
+        if (fish.length % 3 === 0) {
+            holyFish.push(fish)
+        }
+        return holyFish
+    }
+
+}
+
+export const soldierFish = () => {
+    const soldiers = []
+
+    for (fish of fish) {
+        if (fish.length % 5 === 0) {
+            soldiers.push(fish)
+        }
+        return soldiers
+    }
+}
+
+export const nonHolyFish = () => {
+    const regularFish = []
+
+    for (fish of fish) {
+        if ( fish.length % 3 !== 0 || fish.length % 5 !==0) {
+            regularFish.push(fish)
+        }
+        return regularFish
+    }
+}
